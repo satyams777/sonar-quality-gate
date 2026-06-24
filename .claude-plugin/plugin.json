@@ -1,0 +1,8 @@
+{
+  "name": "sonar-quality-gate",
+  "description": "Automatic SonarJS quality gate check after every file edit — removes commented-out code, auto-fixes ESLint issues, and blocks Claude if unfixable violations remain in JS/TS/JSX/TSX files.",
+  "author": {
+    "name": "Bitcot",
+    "email": "anujeshyadav@bitcot.com"
+  }
+}

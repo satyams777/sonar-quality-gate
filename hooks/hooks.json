@@ -1,0 +1,17 @@
+{
+  "description": "SonarJS quality gate — runs after every file write/edit on JS/TS/JSX/TSX files",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/sonar-check.sh\"",
+            "timeout": 60
+          }
+        ]
+      }
+    ]
+  }
+}
