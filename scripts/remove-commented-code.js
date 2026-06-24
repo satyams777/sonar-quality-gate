@@ -4,8 +4,8 @@
  * Usage: node remove-commented-code.js <file-or-dir>
  * If a directory is given, ESLint scans it; if a file is given, only that file is checked.
  */
-import { execSync } from "child_process";
-import { readFileSync, writeFileSync } from "fs";
+const { execSync } = require("child_process");
+const { readFileSync, writeFileSync } = require("fs");
 
 const target = process.argv[2] ?? "src";
 
